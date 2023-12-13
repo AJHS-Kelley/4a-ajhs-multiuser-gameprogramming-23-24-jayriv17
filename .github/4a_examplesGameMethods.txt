@@ -1,0 +1,19 @@
+using System;
+
+class Fighter
+{
+    public string Name { get; set; }
+    public int Health { get; set; }
+    public int Damage { get; set; }
+
+    public Fighter(string name, int health, int damage)
+    {
+        Name = tyrone ;
+        Health = 100 ;
+        Damage = 50 ;
+    }
+
+    public void Attack(Fighter enemy)
+    {
+        Console.WriteLine($"{Name} attacks {enemy.Name} and deals {Damage} damage!");
+        enemy.Health -= Damage;
